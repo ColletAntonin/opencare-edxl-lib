@@ -13,8 +13,8 @@ import javax.activation.MimeTypeParseException;
 import javax.xml.namespace.QName;
 
 import org.apache.abdera.factory.Factory;
-import org.apache.abdera.i18n.io.InputStreamDataSource;
 import org.apache.abdera.i18n.iri.IRI;
+import org.apache.abdera.i18n.text.io.InputStreamDataSource;
 import org.apache.abdera.model.Element;
 import org.apache.axiom.attachments.utils.DataHandlerUtils;
 import org.opencare.lib.model.BaseWrapper;

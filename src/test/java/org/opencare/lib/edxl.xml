@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EDXLDistribution xmlns="urn:oasis:names:tc:emergency:EDXL:DE:1.0">
+    <distributionID>12345</distributionID>
+    <senderID>nontster@gmail.com</senderID>
+    <dateTimeSent>2009-08-29T14:48:13+07:00</dateTimeSent>
+    <distributionStatus>Actual</distributionStatus>
+    <distributionType>Report</distributionType>
+    <combinedConfidentiality>UNCLASSIFIED AND NOT SENSITIVE</combinedConfidentiality>
+    <language>EN</language>
+    <senderRole>
+        <valueListUrn>roleUrn1</valueListUrn>
+        <value>manager1</value>
+    </senderRole>
+    <senderRole>
+        <valueListUrn>roleUrn2</valueListUrn>
+        <value>manager2</value>
+    </senderRole>
+    <recipientRole>
+        <valueListUrn>roleUrn1</valueListUrn>
+        <value>staff1</value>
+    </recipientRole>
+    <recipientRole>
+        <valueListUrn>roleUrn2</valueListUrn>
+        <value>staff2</value>
+    </recipientRole>
+    <keyword>
+        <valueListUrn>keywordUrn1</valueListUrn>
+        <value>keyword1?</value>
+    </keyword>
+    <keyword>
+        <valueListUrn>keywordUrn2</valueListUrn>
+        <value>keyword2</value>
+    </keyword>
+    <distributionReference>ref-0001</distributionReference>
+    <explicitAddress>
+        <explicitAddressScheme>EA</explicitAddressScheme>
+        <explicitAddressValue>EA-0001</explicitAddressValue>
+        <explicitAddressValue>EA-0002</explicitAddressValue>
+    </explicitAddress>
+    <targetArea>
+        <circle>38.26295, -122.07454 15</circle>
+        <circle>138.26295, 122.07454 50</circle>
+        <polygon>42,-124.2102 42,-120.1 39,-120 35.0,-114.6328 34.35,- 120.4418 38.9383,-123.817
+            42,-124.2102</polygon>
+        <polygon>10,-100.2102 42,-120.1 39,-120 35.0,-114.6328 34.35,- 120.4418 38.9383,-123.817
+            42,-124.2102</polygon>
+        <country>TH</country>
+        <country>US</country>
+        <subdivision>US-TX</subdivision>
+        <subdivision>DK-025</subdivision>
+        <locCodeUN>USFFB</locCodeUN>
+        <locCodeUN>USSUU</locCodeUN>
+    </targetArea>
+    <contentObject>
+        <contentDescription>this is description</contentDescription>
+        <contentKeyword>
+            <valueListUrn>valueListUrn</valueListUrn>
+            <value>value</value>
+        </contentKeyword>
+        <incidentID>incident-001-1000</incidentID>
+        <incidentDescription>incident-desc</incidentDescription>
+        <originatorRole>
+            <valueListUrn>roleUrn</valueListUrn>
+            <value>manager</value>
+        </originatorRole>
+        <consumerRole>
+            <valueListUrn>roleUrn</valueListUrn>
+            <value>consumer</value>
+        </consumerRole>
+        <xmlContent>
+            <embeddedXMLContent>
+                <alert xmlns="urn:oasis:names:tc:emergency:cap:1.1">
+                    <identifier>ABC123DEF456</identifier>
+                    <sender>Nont Banditwong</sender>
+                    <sent>2009-08-29T14:48:13+07:00</sent>
+                    <status>Actual</status>
+                    <info>
+                        <category>Geo</category>
+                        <event>Something happened</event>
+                        <urgency>Past</urgency>
+                        <severity>Extreme</severity>
+                        <language>EN</language>
+                        <eventCode>
+                            <valueName>name</valueName>
+                            <value>value</value>
+                        </eventCode>
+                        <area>
+                            <polygon>42,-124.2102 42,-120.1 39,-120 35.0,-114.6328 34.35,- 120.4418
+                                38.9383,-123.817 42,-124.2102</polygon>
+                            <polygon>10,-100.2102 42,-120.1 39,-120 35.0,-114.6328 34.35,- 120.4418
+                                38.9383,-123.817 42,-124.2102</polygon>
+                        </area>
+                    </info>
+                </alert>
+            </embeddedXMLContent>
+        </xmlContent>
+    </contentObject>
+</EDXLDistribution>

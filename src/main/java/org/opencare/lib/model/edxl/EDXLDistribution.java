@@ -204,7 +204,7 @@ public interface EDXLDistribution extends ExtensibleElement, Element {
 	 * @param value
 	 *            allowed object is {@link java.lang.String}
 	 */
-	void setLanguage(String value);	
+	<T extends Element>T setLanguage(String value);	
 	
 	List<ValueList> getSenderRoles();
 	String getSenderRole(String name);
