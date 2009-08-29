@@ -134,9 +134,10 @@ public class EDXLDistributionWrapper extends BaseWrapper implements
 	}
 
 	@Override
-	public void setLanguage(String lang) {
+	public <T extends Element>T setLanguage(String lang) {
 		// TODO Auto-generated method stub
 		addSimpleExtension(EDXL_LANGUAGE, lang);
+		return (T)this;
 	}
 
 	@Override

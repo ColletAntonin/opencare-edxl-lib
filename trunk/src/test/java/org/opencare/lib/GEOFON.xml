@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EDXLDistribution xmlns="urn:oasis:names:tc:emergency:EDXL:DE:1.0">
+    <distributionID>GEOFON.gfz2009qmpm</distributionID>
+    <senderID>quakewatch.geofon@opencare.org</senderID>
+    <dateTimeSent>2009-08-23T17:38:27</dateTimeSent>
+    <distributionStatus>Actual</distributionStatus>
+    <distributionType>Report</distributionType>
+    <combinedConfidentiality>UNCLASSIFIED AND NOT SENSITIVE</combinedConfidentiality>
+    <targetArea>
+        <circle>-1.67,99.35 100</circle>
+    </targetArea>
+    <contentObject>
+        <contentDescription>Epicenter Map</contentDescription>
+        <incidentID>gfz2009qmpm</incidentID>
+        <incidentDescription>M5.5/27km earthquake in Southern Sumatra, Indonesia; details in
+            http://geofon.gfz-potsdam.de/db/eqpage.php?id=gfz2009qmpm</incidentDescription>
+        <nonXMLContent>
+            <mimeType>image/jpeg</mimeType>
+            <uri>http://geofon.gfz-potsdam.de/geofon/alerts/gfz2009qmpm/gfz2009qmpm.jpg</uri>
+        </nonXMLContent>
+    </contentObject>
+</EDXLDistribution>

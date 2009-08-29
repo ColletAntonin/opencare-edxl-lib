@@ -51,9 +51,10 @@ public class InfoWrapper extends BaseWrapper implements Info, Constants {
 	}
 
 	@Override
-	public void setLanguage(String language) {
+	public <T extends Element>T setLanguage(String language) {
 		// TODO Auto-generated method stub
 		setElementText(CAP_LANGUAGE, language, CAP_1_0_LANGUAGE);
+		return (T)this;
 	}
 
 	/*

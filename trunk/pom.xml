@@ -9,13 +9,11 @@
 	<name>OCLib</name>
 	<url>http://203.150.212.250/oclib/</url>
 	<repositories>
-		<repository>
-			<id>apache-incubating</id>
-			<name>Apache Incubating Repository</name>
-			<url>
-				http://people.apache.org/repo/m2-incubating-repository/
-			</url>
-		</repository>
+    	<repository>
+      		<id>apache-incubating</id>
+      		<name>Apache Incubating Repository</name>
+      		<url>http://people.apache.org/repo/m2-incubating-repository/</url>
+    	</repository>
 		<repository>
 			<id>jboss.releases</id>
 			<name>JBoss releases</name>
@@ -30,18 +28,21 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.abdera</groupId>
-			<artifactId>abdera-client</artifactId>
-			<version>0.3.0-incubating</version>
-			<type>jar</type>
-			<scope>compile</scope>
+  			<groupId>org.apache.abdera</groupId>
+  			<artifactId>abdera-client</artifactId>
+  			<version>0.4.0-incubating</version>
 		</dependency>
+
 		<dependency>
-			<groupId>org.apache.abdera</groupId>
-			<artifactId>abdera-spring</artifactId>
-			<version>0.3.0-incubating</version>
-			<type>jar</type>
-			<scope>compile</scope>
+  			<groupId>org.apache.abdera</groupId>
+  			<artifactId>abdera-server</artifactId>
+  			<version>0.4.0-incubating</version>
+		</dependency>
+
+		<dependency>
+  			<groupId>org.apache.abdera</groupId>
+  			<artifactId>abdera-spring</artifactId>
+  			<version>0.4.0-incubating</version>
 		</dependency>
 	</dependencies>
 	<ciManagement>

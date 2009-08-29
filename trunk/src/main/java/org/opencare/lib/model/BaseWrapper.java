@@ -51,12 +51,4 @@ public abstract class BaseWrapper extends ExtensibleElementWrapper {
 		for (QName other : others)
 			removeElement(other);
 	}
-
-	public String getLanguage() {
-		return null;
-	}
-
-	public void setLanguage(String lang) {
-	}
-
 }

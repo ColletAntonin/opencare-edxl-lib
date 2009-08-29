@@ -279,6 +279,7 @@ public interface Info extends ExtensibleElement, Element {
 	/** RFC 3066 natural language identifier * */
 	String getLanguage();
 
-	/** RFC 3066 natural language identifier * */
-	void setLanguage(String language);	
+	/** RFC 3066 natural language identifier * */		
+	<T extends Element>T setLanguage(String language);
+	
 }

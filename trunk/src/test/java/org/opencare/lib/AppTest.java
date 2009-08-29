@@ -1,5 +1,8 @@
 package org.opencare.lib;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.Date;
@@ -59,7 +62,7 @@ public class AppTest extends TestCase implements Constants {
 
 		edxl = (EDXLDistribution) factory.newElement(EDXL_EDXL_DISTRIBUTION, doc);
 		edxl.setDistributionID("12345");
-		edxl.setSenderID("nont@inet.co.th");
+		edxl.setSenderID("nontster@gmail.com");
 
 		edxl.setDateTimeSent(new Date());
 		edxl.setDistributionStatus(EDXLDistribution.DistributionStatus.Actual);
@@ -130,16 +133,54 @@ public class AppTest extends TestCase implements Constants {
 		Parser parser = abdera.getParser();
 		StringReader in2 = new StringReader(edxl.toString());
 		Document<EDXLDistribution> edxl_doc = parser.parse(in2);
+		 
 				
 		EDXLDistribution edxl_parsed = (EDXLDistribution) edxl_doc.getRoot();
 		
 		assertEquals(edxl_parsed.getDistributionID(),"12345"); 
-		assertEquals(edxl_parsed.getSenderID(),"nont@inet.co.th"); 
+		assertEquals(edxl_parsed.getSenderID(),"nontster@gmail.com"); 
 		assertEquals(edxl_parsed.getDistributionStatus(),EDXLDistribution.DistributionStatus.Actual);
 				
 		assertEquals(edxl.getDistributionType(),EDXLDistribution.DistributionType.Report);
 		assertEquals(edxl.getCombinedConfidentiality(),"UNCLASSIFIED AND NOT SENSITIVE");
 		assertEquals(edxl.getLanguage(),"EN");
 		
+		//System.out.println(edxl_parsed);
+	}
+	
+	public void testParse(){
+		
+		//create file object				
+		File file = new File("C://workspace//opencare-edxl-lib//target//test-classes//org//opencare//lib//GEOFON.xml");
+		int ch;
+		StringBuffer strContent = new StringBuffer("");
+		FileInputStream fin = null;
+		
+
+		try {
+			fin = new FileInputStream(file);
+			while( (ch = fin.read()) != -1)
+				strContent.append((char)ch);
+				fin.close(); 
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block			
+			System.out.println("File " + file.getAbsolutePath() + " could not be found on filesystem");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Exception while reading the file" + e);
+		}
+
+		//System.out.println("File contents :");
+		//System.out.println(strContent);
+		
+		Parser parser = abdera.getParser();
+		StringReader in2 = new StringReader(strContent.toString());
+		Document<EDXLDistribution> edxl_doc = parser.parse(in2);
+		 				
+		EDXLDistribution edxl_parsed = (EDXLDistribution) edxl_doc.getRoot();
+		System.out.println(edxl_parsed.getDistributionID());
+		
+
+		 		
 	}
 }
