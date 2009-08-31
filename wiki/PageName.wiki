@@ -1,4 +1,5 @@
-OpenCARE Web Application Showcase
+OpenCARE EDXL Library
+
 
 = How OpenCARE works?  =
 
