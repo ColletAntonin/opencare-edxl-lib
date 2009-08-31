@@ -25,6 +25,3 @@ Here is an example of how System A disseminates information to Systems B, C, and
    * at the same time, it uses plug-in C to do the same for System C, in C's native format,
    * information received by B and C is the same information from A but structured differently because B and C are using different formats than A (different software). 
   * System D, connected at OpenCARE node N3, also receives the same information as those connected to Node N2 above. But if System D is using the same software as System A, then node N3 will use plug-in A to talk to System D. Plug-ins are shared among OpenCARE nodes in the network. 
-
-
-http://photos-d.ak.fbcdn.net/hphotos-ak-snc1/hs135.snc1/5772_120445368485_538123485_2268803_6498178_n.jpg
