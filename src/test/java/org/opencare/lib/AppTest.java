@@ -151,7 +151,7 @@ public class AppTest extends TestCase implements Constants {
 	public void testParse(){
 		
 		//create file object				
-		File file = new File("C://workspace//opencare-edxl-lib//target//test-classes//org//opencare//lib//GEOFON.xml");
+/*		File file = new File("C://workspace//opencare-edxl-lib//target//test-classes//org//opencare//lib//GEOFON.xml");
 		int ch;
 		StringBuffer strContent = new StringBuffer("");
 		FileInputStream fin = null;
@@ -180,7 +180,7 @@ public class AppTest extends TestCase implements Constants {
 		EDXLDistribution edxl_parsed = (EDXLDistribution) edxl_doc.getRoot();
 		System.out.println(edxl_parsed.getDistributionID());
 		
-
+*/
 		 		
 	}
 }
